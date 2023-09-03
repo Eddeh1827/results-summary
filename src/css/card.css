@@ -1,4 +1,148 @@
-div {
-  width: fit-content;
-  height: 10vh;
+* {
+  box-sizing: border-box;
+}
+#main {
+  display: flex;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  width: 100%;
+}
+.card-left {
+  width: 50%;
+  max-width: 27vw;
+  background: linear-gradient(to top, blue, rgb(88, 29, 250) 69%);
+  border-radius: 20px;
+  color: gray;
+}
+.card-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.card-right h3 {
+  text-align: left;
+  padding-left: 1.6em;
+  margin-bottom: 2em;
+}
+.cards {
+  padding-top: -35px;
+  padding-left: 20px;
+}
+.cards span[id] {
+  flex: 1;
+  font-weight: bold;
+}
+.card {
+  width: 100%;
+  margin: 0 2.5em 1em 1.5em;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(153, 125, 13, 0.049);
+}
+.card img {
+  padding-right: 0.4em;
+  margin-top: 5px;
+}
+.sum-bold {
+  padding-right: 0.3em;
+  font-weight: bold;
+}
+.circle {
+  color: gray;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.circle .percent {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  display: inline-block;
+  width: 100%;
+}
+.centered-text {
+  text-align: center;
+  background: linear-gradient(rgba(42, 8, 137, 0.666), rgb(24, 32, 252));
+  border-radius: 50%;
+  padding: 2em;
+}
+.lower-section {
+  margin: 0 60px;
+  color: gray;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 0 35px;
+}
+.lower-section span {
+  font-size: 1.7rem;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+.continue {
+  padding: 20px 20px;
+  background-color: rgba(28, 42, 73, 0.849);
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  width: 90%;
+  margin-left: 15%;
+}
+.continue:hover {
+  cursor: pointer;
+  background-color: rgb(88, 29, 250);
+}
+@media only screen and (max-width: 600px) {
+  #main {
+    flex-direction: column;
+    margin: 0;
+  }
+  .card-left {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 20% 20%;
+  }
+  .centered-text {
+    padding: 0.9em;
+  }
+  .lower-section {
+    font-size: 15px;
+    margin: auto;
+    padding: 0 2em 2em;
+  }
+  .card {
+    margin-left: 10px;
+    margin-top: -22px;
+    padding-top: 25px;
+  }
+  .cards {
+    width: 100%;
+    max-width: 95%;
+    padding: 0;
+  }
+  .card-right {
+    width: 100%;
+  }
+  .card-right h3 {
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 8%;
+  }
+  .continue {
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }

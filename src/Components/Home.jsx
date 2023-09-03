@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Components/Card";
+import "../css/Home.css";
 
 export default function Home() {
   return (
