@@ -1,5 +1,6 @@
 #main {
   display: flex;
+  margin-left: 20%;
 }
 .card-left {
   width: 50%;
@@ -10,8 +11,10 @@
 }
 .card-right {
   width: 50%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
+  margin-left: -2%;
 }
 .card-right h3 {
   text-align: left;
@@ -19,8 +22,7 @@
   margin-bottom: 2em;
 }
 .cards {
-  padding-top: -35px;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 .cards span[id] {
   flex: 1;
@@ -95,7 +97,7 @@ h3 {
   text-align: center;
 }
 .continue {
-  padding: 20px 20px;
+  padding: 10px 20px;
   background-color: rgba(28, 42, 73, 0.849);
   color: #ffffff;
   border: none;
@@ -104,7 +106,7 @@ h3 {
   text-decoration: none;
   font-size: 1em;
   width: 90%;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 .continue:hover {
   cursor: pointer;
@@ -144,6 +146,7 @@ h3 {
   }
   .card-right {
     width: 100%;
+    max-width: none;
   }
   .card-right h3 {
     text-align: left;
