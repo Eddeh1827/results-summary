@@ -1,15 +1,9 @@
-* {
-  box-sizing: border-box;
-}
 #main {
   display: flex;
-  margin-top: 5vh;
-  margin-left: 5vw;
-  width: 100%;
 }
 .card-left {
   width: 50%;
-  max-width: 27vw;
+  min-width: 50%;
   background: linear-gradient(to top, blue, rgb(88, 29, 250) 69%);
   border-radius: 20px;
   color: gray;
@@ -42,11 +36,23 @@
 }
 .card img {
   padding-right: 0.4em;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 .sum-bold {
   padding-right: 0.3em;
   font-weight: bold;
+}
+#react {
+  color: red;
+}
+#memory {
+  color: yellow;
+}
+#verbal {
+  color: green;
+}
+#visual {
+  color: blue;
 }
 .circle {
   color: gray;
@@ -104,7 +110,7 @@ h3 {
   cursor: pointer;
   background-color: rgb(88, 29, 250);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   #main {
     flex-direction: column;
     margin: 0;
@@ -127,6 +133,9 @@ h3 {
     margin-left: 10px;
     margin-top: -22px;
     padding-top: 25px;
+  }
+  .card img {
+    padding-right: 0.4em;
   }
   .cards {
     width: 100%;
