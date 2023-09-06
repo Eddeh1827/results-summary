@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/card.css";
 import memory from "../assets/images/icon-memory.svg";
-import reaction from "../assets/images/icon-reaction.svg";
 import verbal from "../assets/images/icon-verbal.svg";
 import visual from "../assets/images/icon-visual.svg";
 
-function Card() {
+function Card(props) {
+  const { data } = props;
   return (
     <div id="main">
       <div className="card-left">
@@ -28,9 +28,9 @@ function Card() {
         </div>
         <div className="cards">
           <div className="card">
-            <img src={reaction} alt="lightning bolt"></img>
-            <span id="react">Reaction</span>
-            <span className="sum-bold">80</span> / 100
+            <img src={data[0].icon} alt="lightning bolt"></img>
+            <span id="react">{data[0].category}</span>
+            <span className="sum-bold">{data[0].score}</span> / 100
           </div>
           <div className="card">
             <img src={memory} alt="brain"></img>

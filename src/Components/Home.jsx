@@ -1,11 +1,12 @@
 import React from "react";
 import Card from "../Components/Card";
+import jsonData from "../data.json";
 import "../css/Home.css";
 
 export default function Home() {
   return (
     <div>
-      <Card />
+      <Card data={jsonData} />
       <div className="attribution">
         Challenge by{" "}
         <a
